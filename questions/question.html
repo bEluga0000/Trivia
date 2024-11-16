@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia</title>
+    <link rel="stylesheet" href="question.css">
+  </head>
+  <body>
+    <!-- AppBar -->
+    <div id="appBar">
+      <div>
+        <img
+          src="/data/images/Logo.png"
+          alt="Logo"
+          style="height: 80px; width: 60px; background: transparent"
+        />
+      </div>
+      <div style="font-size: 60px; font-weight: 900; color: #58cc02">
+        IQ Arena
+      </div>
+    </div>
+    <div style="padding-top:120px; margin: 0 10px; display: flex; flex-direction: column; justify-content: center; margin-bottom: 20px;gap: 1rem; ">
+        <div style="width: 100%; display: flex; justify-content: center;">
+            <h1>
+            Questions
+        </h1>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: column; padding: 0 10px; gap: 2rem;">
+        <div style="display: flex; justify-content: space-between;">
+            <div style="display: flex; gap: 0.5rem; font-size: larger;">
+                <div id="">
+                    <p>Turn -</p>
+                </div>
+                <div>
+                    <p id="playerNameSHow"></p>
+                </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem; font-size: larger;">
+                <div>
+                    <p>Difficulty - </p>
+                </div>
+                <div>
+                    <p id="diffShow"></p>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column; padding: 0 10px; gap: 2rem;">
+            <div style="width: 100%; text-align: center;">
+                <h2 id="questionShow"></h2>
+            </div>
+            <div id="showOptions" style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">              
+            </div>
+            <div id="submitBtnShow" style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+
+            </div>
+        </div>
+    </div>
+    <!-- <div id="questionShow"></div> -->
+    <!-- <div id="showOptions"> --> 
+      <!-- <button id="subBtn">Submit</button> -->
+    <!-- </div> -->
+     <div id="correctAns">
+
+     </div>
+     <div id="errMsg">
+
+     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+    <script src="question.js"></script>
+  </body>
+</html>

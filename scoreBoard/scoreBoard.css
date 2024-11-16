@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #131f24;
+    box-sizing: border-box;
+    color: white;
+}
+
+#appBar {
+    background-color: #131f24;
+    border-bottom: solid white 2px;
+    box-shadow: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+}
+.showScoreCard{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid white;
+    font-size: 1.5rem;
+    background-color: #7f39d8;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+#finalWin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: #58a700;
+}
+#finalImg img{
+    background-color: #58a700;
+}
+#finalText{
+    background-color: #58a700;
+}
+#homePageLink{
+    border: 1px solid white;
+    font-size: 1.5rem;
+    background-color: #7f39d8;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: 10px;
+}
+#homePageLink a{
+    background-color: #7f39d8;
+}

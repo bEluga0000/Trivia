@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #131f24;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+
+#appBar {
+    background-color: #131f24;
+    border-bottom: solid white 2px;
+    box-shadow: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+.optBtn {
+    font-size: 18px;
+    border: 2px solid;
+    padding: 0.25rem 0.75rem;
+    border-radius: 8px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.selectedOpt{
+    border: 1px solid #376f8a;
+    color: #1a75a0;
+}
+#subBtn {
+    font-size: 1.5rem;
+    border: 2px solid;
+    padding: 0.75rem 0.75rem;
+    border-radius: 8px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* disabled */
+    background-color: #93d334;
+    color: #102a0f;
+}
+#subBtn:disabled {
+    background-color: #d3d3d3;
+    color: #a1a1a1;
+    border: 2px solid #c0c0c0;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
