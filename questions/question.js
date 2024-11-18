@@ -51,6 +51,8 @@ const fetchQuestion = async()=>{
         const showTurn = document.getElementById("playerNameSHow")
         showTurn.textContent = ""
         showTurn.textContent = presentQuestinoNumber%2 == 0 ? player2name:player1name
+        const catShow = document.getElementById("catSHow")
+        catShow.textContent = presentCategory
         const diffShow = document.getElementById("diffShow")
         diffShow.textContent = ""
         diffShow.textContent = questionLevel
@@ -62,11 +64,13 @@ const fetchQuestion = async()=>{
         submitBtn.setAttribute("id","subBtn")
         submitBtn.addEventListener("click", (e) => { handelSubmitBtn(e, questionData.correctAnswer) })
         showSubBtn.appendChild(submitBtn)
-        const correctAns = document.getElementById("correctAns")
-        correctAns.textContent = ""
-        correctAns.textContent = questionData.correctAnswer
+        // const correctAns = document.getElementById("correctAns")
+        // correctAns.textContent = ""
+        // correctAns.textContent = questionData.correctAnswer
     }catch(e){
-        console.log(e.message)
+        const questionShow = document.getElementById("questionShow")
+        questionShow.innerHTML = `<p>${e} </p><p>Go to give link and play this category again</p> <a href="/categories/categories.html">Category page</>`
+
     }
 }
 
@@ -93,6 +97,8 @@ const handelSubmitBtn = (e,correctAnswer)=>{
         const questionShow = document.getElementById("questionShow")
         const showSubBtn = document.getElementById("submitBtnShow")
         showSubBtn.textContent = ""
+        const showTurn = document.getElementById("playerNameSHow")
+        showTurn.textContent = ""
         const diffShow = document.getElementById("diffShow")
         diffShow.textContent = ""
         const showOptions = document.getElementById("showOptions")

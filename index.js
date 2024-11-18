@@ -14,7 +14,7 @@ window.onload = () => {
         catDiv.setAttribute("id", key);
         catDiv.classList.add("category-button"); 
         const catImage = document.createElement("img");
-        catImage.setAttribute("src", `data/images/Avtar${key + 1}.png`);
+        catImage.setAttribute("src", `data/images/${key}.png`);
         const catName = document.createElement("p");
         catName.textContent = category.name;
         catDiv.appendChild(catImage);

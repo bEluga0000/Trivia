@@ -13,7 +13,7 @@ window.onload = ()=>{
         catDiv.classList.add("category-button"); // Add a class for styling
         catDiv.setAttribute("class","cat-btn")
         const catImage = document.createElement("img");
-        catImage.setAttribute("src", `../data/images/Avtar${key + 1}.png`);
+        catImage.setAttribute("src", `../data/images/${key}.png`);
         const catName = document.createElement("p");
         catName.textContent = category.name;
         catDiv.appendChild(catImage);
