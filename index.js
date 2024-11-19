@@ -50,8 +50,10 @@ const handleCategoryButton = (category, key) => {
 };
 const handelStartSubmitButton = (e)=>{
     e.preventDefault()
-    const player1Name = document.getElementById("player1").value
-    const player2Name = document.getElementById("player2").value
+    let player1Name = document.getElementById("player1").value
+    let player2Name = document.getElementById("player2").value
+    player1Name = player1Name.trim()
+    player2Name = player2Name.trim()
     const errMsg = document.getElementById("errMsg")
     if (player1Name.length > 0 && player2Name.length > 0 && presentSelectedIndex!=null && presentSelectedName!=null && player1Name != player2Name)
     {
