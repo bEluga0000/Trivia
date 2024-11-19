@@ -60,9 +60,10 @@ body
 }
 .cat-btn p{
     color: whitesmoke;
-    font-size: larger;
+    font-size: 1.5rem;
     padding: 0.25rem 1rem;
     border-radius: 10px;
+
 }
 #submitBtn{
     background-color: #6f4ea1;
@@ -100,6 +101,7 @@ body
 }
 .selected{
     background-color: greenyellow;
+    color: black;
 }
 #submitBtn:disabled{
     cursor: not-allowed;
