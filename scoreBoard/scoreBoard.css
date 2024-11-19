@@ -1,13 +1,12 @@
-body {
+*{
     margin: 0;
     padding: 0;
-    background-color: #131f24;
     box-sizing: border-box;
-    
+    color: white;
 }
 
-*{
-    color: white;
+body{
+    background-color: #131f24;
 }
 #appBar {
     background-color: #131f24;
@@ -61,3 +60,10 @@ body {
 #homePageLink a{
     background-color: #7f39d8;
 }
+.top-img img{
+    width: 100px;
+    height: 100px;
+}
+/* .top-img img{
+    width: fit-content;
+} */

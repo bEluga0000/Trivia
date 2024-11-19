@@ -29,7 +29,7 @@ window.onload = ()=>{
         const topImg = document.createElement("div")
         topImg.setAttribute("class","top-img")
         const avtar = document.createElement("img")
-        avtar.setAttribute("src",`/data/images/avtar${key+1}.png`)
+        avtar.setAttribute("src",`/data/images/${key}.png`)
         topImg.appendChild(avtar)
         topDiv.appendChild(topImg)
         card.appendChild(topDiv)
